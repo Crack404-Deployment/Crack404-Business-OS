@@ -80,8 +80,9 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
             </div>
             {openMenus.crm && (
               <div className="pl-11 space-y-1 mt-1 overflow-hidden">
-                <Link href="/leads" className="cursor-pointer block px-4 py-2 text-sm text-gray-500 hover:text-orange-500 hover:bg-orange-50 rounded-lg transition-colors">Leads</Link>
-                <Link href="/contacts" className="cursor-pointer block px-4 py-2 text-sm text-gray-500 hover:text-orange-500 hover:bg-orange-50 rounded-lg transition-colors">Contacts</Link>
+                <Link href="/crm/dashboard" className="cursor-pointer block px-4 py-2 text-sm text-gray-500 hover:text-orange-500 hover:bg-orange-50 rounded-lg transition-colors">Dashboard</Link>
+                <Link href="/crm/leads" className="cursor-pointer block px-4 py-2 text-sm text-gray-500 hover:text-orange-500 hover:bg-orange-50 rounded-lg transition-colors">Leads</Link>
+                <Link href="/crm/contacts" className="cursor-pointer block px-4 py-2 text-sm text-gray-500 hover:text-orange-500 hover:bg-orange-50 rounded-lg transition-colors">Contacts</Link>
               </div>
             )}
           </div>
@@ -97,6 +98,7 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
             </div>
             {openMenus.pos && (
               <div className="pl-11 space-y-1 mt-1 overflow-hidden">
+                 <Link href="/pos/dashboard" className="cursor-pointer block px-4 py-2 text-sm text-gray-500 hover:text-orange-500 hover:bg-orange-50 rounded-lg transition-colors">Dashboard</Link>
                 <Link href="/pos/transactions" className="cursor-pointer block px-4 py-2 text-sm text-gray-500 hover:text-orange-500 hover:bg-orange-50 rounded-lg transition-colors">Transactions</Link>
                 <Link href="/pos/orders" className="cursor-pointer block px-4 py-2 text-sm text-gray-500 hover:text-orange-500 hover:bg-orange-50 rounded-lg transition-colors">Orders</Link>
               </div>
@@ -114,8 +116,9 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
             </div>
             {openMenus.inventory && (
               <div className="pl-11 space-y-1 mt-1 overflow-hidden">
-                <Link href="/products" className="cursor-pointer block px-4 py-2 text-sm text-gray-500 hover:text-orange-500 hover:bg-orange-50 rounded-lg transition-colors">Products</Link>
-                <Link href="/warehouse" className="cursor-pointer block px-4 py-2 text-sm text-gray-500 hover:text-orange-500 hover:bg-orange-50 rounded-lg transition-colors">Warehouse</Link>
+                 <Link href="/inventory/dashboard" className="cursor-pointer block px-4 py-2 text-sm text-gray-500 hover:text-orange-500 hover:bg-orange-50 rounded-lg transition-colors">Dashboard</Link>
+                <Link href="/inventory/products" className="cursor-pointer block px-4 py-2 text-sm text-gray-500 hover:text-orange-500 hover:bg-orange-50 rounded-lg transition-colors">Products</Link>
+                <Link href="/inventory/warehouse" className="cursor-pointer block px-4 py-2 text-sm text-gray-500 hover:text-orange-500 hover:bg-orange-50 rounded-lg transition-colors">Warehouse</Link>
               </div>
             )}
           </div>
@@ -131,8 +134,9 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
             </div>
             {openMenus.hrm && (
               <div className="pl-11 space-y-1 mt-1 overflow-hidden">
-                <Link href="/employees" className="cursor-pointer block px-4 py-2 text-sm text-gray-500 hover:text-orange-500 hover:bg-orange-50 rounded-lg transition-colors">Employees</Link>
-                <Link href="/payroll" className="cursor-pointer block px-4 py-2 text-sm text-gray-500 hover:text-orange-500 hover:bg-orange-50 rounded-lg transition-colors">Payroll</Link>
+                 <Link href="/hrm/dashboard" className="cursor-pointer block px-4 py-2 text-sm text-gray-500 hover:text-orange-500 hover:bg-orange-50 rounded-lg transition-colors">Dashboard</Link>
+                <Link href="/hrm/employees" className="cursor-pointer block px-4 py-2 text-sm text-gray-500 hover:text-orange-500 hover:bg-orange-50 rounded-lg transition-colors">Employees</Link>
+                <Link href="/hrm/payroll" className="cursor-pointer block px-4 py-2 text-sm text-gray-500 hover:text-orange-500 hover:bg-orange-50 rounded-lg transition-colors">Payroll</Link>
               </div>
             )}
           </div>
@@ -148,8 +152,9 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
             </div>
             {openMenus.accounting && (
               <div className="pl-11 space-y-1 mt-1 overflow-hidden">
-                <Link href="/invoices" className="cursor-pointer block px-4 py-2 text-sm text-gray-500 hover:text-orange-500 hover:bg-orange-50 rounded-lg transition-colors">Invoices</Link>
-                <Link href="/reports" className="cursor-pointer block px-4 py-2 text-sm text-gray-500 hover:text-orange-500 hover:bg-orange-50 rounded-lg transition-colors">Financial Reports</Link>
+                 <Link href="/accounting/dashboard" className="cursor-pointer block px-4 py-2 text-sm text-gray-500 hover:text-orange-500 hover:bg-orange-50 rounded-lg transition-colors">Dashboard</Link>
+                <Link href="/accounting/invoices" className="cursor-pointer block px-4 py-2 text-sm text-gray-500 hover:text-orange-500 hover:bg-orange-50 rounded-lg transition-colors">Invoices</Link>
+                <Link href="/accounting/financialreport" className="cursor-pointer block px-4 py-2 text-sm text-gray-500 hover:text-orange-500 hover:bg-orange-50 rounded-lg transition-colors">Financial Reports</Link>
               </div>
             )}
           </div>
@@ -165,43 +170,44 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
             </div>
             {openMenus.marketing && (
               <div className="pl-11 space-y-1 mt-1 overflow-hidden">
-                <Link href="/campaigns" className="cursor-pointer block px-4 py-2 text-sm text-gray-500 hover:text-orange-500 hover:bg-orange-50 rounded-lg transition-colors">Campaigns</Link>
-                <Link href="/analytics" className="cursor-pointer block px-4 py-2 text-sm text-gray-500 hover:text-orange-500 hover:bg-orange-50 rounded-lg transition-colors">Analytics</Link>
+                 <Link href="/marketing/dashboard" className="cursor-pointer block px-4 py-2 text-sm text-gray-500 hover:text-orange-500 hover:bg-orange-50 rounded-lg transition-colors">Dashboard</Link>
+                <Link href="/marketing/campaigns" className="cursor-pointer block px-4 py-2 text-sm text-gray-500 hover:text-orange-500 hover:bg-orange-50 rounded-lg transition-colors">Campaigns</Link>
+                <Link href="/marketing/analytics" className="cursor-pointer block px-4 py-2 text-sm text-gray-500 hover:text-orange-500 hover:bg-orange-50 rounded-lg transition-colors">Analytics</Link>
               </div>
             )}
           </div>
 
           {/* AI Assistant */}
-          <Link href="/ai-assistant" className="cursor-pointer flex items-center gap-4 px-4 py-3 text-gray-600 hover:text-orange-600 hover:bg-orange-50 rounded-xl transition-all mb-1">
+          <Link href="/aiassistant" className="cursor-pointer flex items-center gap-4 px-4 py-3 text-gray-600 hover:text-orange-600 hover:bg-orange-50 rounded-xl transition-all mb-1">
             <FaRobot className="text-sm" /> <span className="text-sm font-medium">AI Assistant</span>
           </Link>
 
           {/* ================= ADMINISTRATION SECTION ================= */}
           <div className="mt-6 mb-2 px-4 text-[10px] font-bold uppercase tracking-widest text-gray-400">Administration</div>
 
-          <Link href="/users" className="cursor-pointer flex items-center gap-4 px-4 py-3 text-gray-600 hover:text-orange-600 hover:bg-orange-50 rounded-xl transition-all mb-1">
+          <Link href="/administration/users&roles" className="cursor-pointer flex items-center gap-4 px-4 py-3 text-gray-600 hover:text-orange-600 hover:bg-orange-50 rounded-xl transition-all mb-1">
             <FaUserCog className="text-sm" /> <span className="text-sm font-medium">Users & Roles</span>
           </Link>
-          <Link href="/branches" className="cursor-pointer flex items-center gap-4 px-4 py-3 text-gray-600 hover:text-orange-600 hover:bg-orange-50 rounded-xl transition-all mb-1">
+          <Link href="/administration/branches" className="cursor-pointer flex items-center gap-4 px-4 py-3 text-gray-600 hover:text-orange-600 hover:bg-orange-50 rounded-xl transition-all mb-1">
             <FaBuilding className="text-sm" /> <span className="text-sm font-medium">Branches</span>
           </Link>
-          <Link href="/departments" className="cursor-pointer flex items-center gap-4 px-4 py-3 text-gray-600 hover:text-orange-600 hover:bg-orange-50 rounded-xl transition-all mb-1">
+          <Link href="/administration/departments" className="cursor-pointer flex items-center gap-4 px-4 py-3 text-gray-600 hover:text-orange-600 hover:bg-orange-50 rounded-xl transition-all mb-1">
             <FaBuilding className="text-sm" /> <span className="text-sm font-medium">Departments</span>
           </Link>
-          <Link href="/audit-logs" className="cursor-pointer flex items-center gap-4 px-4 py-3 text-gray-600 hover:text-orange-600 hover:bg-orange-50 rounded-xl transition-all mb-1">
+          <Link href="/administration/auditlogs" className="cursor-pointer flex items-center gap-4 px-4 py-3 text-gray-600 hover:text-orange-600 hover:bg-orange-50 rounded-xl transition-all mb-1">
             <FaFileAlt className="text-sm" /> <span className="text-sm font-medium">Audit Logs</span>
           </Link>
 
           {/* ================= SETTINGS SECTION ================= */}
           <div className="mt-6 mb-2 px-4 text-[10px] font-bold uppercase tracking-widest text-gray-400">Settings</div>
 
-          <Link href="/settings" className="cursor-pointer flex items-center gap-4 px-4 py-3 text-gray-600 hover:text-orange-600 hover:bg-orange-50 rounded-xl transition-all mb-1">
+          <Link href="/settings/systemsettings" className="cursor-pointer flex items-center gap-4 px-4 py-3 text-gray-600 hover:text-orange-600 hover:bg-orange-50 rounded-xl transition-all mb-1">
             <FaCog className="text-sm" /> <span className="text-sm font-medium">System Settings</span>
           </Link>
-          <Link href="/subscription" className="cursor-pointer flex items-center gap-4 px-4 py-3 text-gray-600 hover:text-orange-600 hover:bg-orange-50 rounded-xl transition-all mb-1">
+          <Link href="/settings/subscription" className="cursor-pointer flex items-center gap-4 px-4 py-3 text-gray-600 hover:text-orange-600 hover:bg-orange-50 rounded-xl transition-all mb-1">
             <FaCreditCard className="text-sm" /> <span className="text-sm font-medium">Subscription</span>
           </Link>
-          <Link href="/integrations" className="cursor-pointer flex items-center gap-4 px-4 py-3 text-gray-600 hover:text-orange-600 hover:bg-orange-50 rounded-xl transition-all mb-1">
+          <Link href="/settings/integrations" className="cursor-pointer flex items-center gap-4 px-4 py-3 text-gray-600 hover:text-orange-600 hover:bg-orange-50 rounded-xl transition-all mb-1">
             <FaPlug className="text-sm" /> <span className="text-sm font-medium">Integrations</span>
           </Link>
 
