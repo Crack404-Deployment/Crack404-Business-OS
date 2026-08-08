@@ -230,7 +230,9 @@ export default function Contacts() {
             </table>
           </div>
 
-          {/* Pagination Footer */}
+          {/* footer part start from here*/}
+          
+          {/* footer part start from here*/}
           <div className="p-4 border-t border-slate-200 flex flex-col sm:flex-row justify-between items-center gap-4 bg-slate-50/50">
             <span className="text-sm font-medium text-slate-500">Showing <span className="font-bold text-slate-900">1</span> to <span className="font-bold text-slate-900">{filteredContacts.length}</span> of <span className="font-bold text-slate-900">1,402</span> contacts</span>
             <div className="flex gap-2">
