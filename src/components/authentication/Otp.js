@@ -72,7 +72,7 @@ export default function Otp() {
         </div>
 
         {/* Verify Button */}
-        <Link href="/" className="block w-full">
+        <Link href="/onboarding" className="block w-full">
           <motion.button 
             whileHover={{ scale: 1.02, y: -1 }}
             whileTap={{ scale: 0.98 }}
