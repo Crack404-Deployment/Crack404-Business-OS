@@ -134,7 +134,7 @@ export default function Signup() {
             <p className="text-center text-slate-500 text-sm mt-6 font-medium relative z-10">
               Already have an account?{' '}
               <Link href="/auth/login" className="text-orange-600 hover:text-orange-700 transition-colors font-semibold">
-                Sign in
+                sign in
               </Link>
             </p>
           </motion.div>
