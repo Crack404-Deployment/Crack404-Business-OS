@@ -174,7 +174,7 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
                   Customer Notes
                 </Link>
                 <Link
-                  href="/crm/file-attachments"
+                  href="/crm/files"
                   className="cursor-pointer block px-4 py-2 text-sm text-gray-500 hover:text-orange-500 hover:bg-orange-50 rounded-lg transition-colors"
                 >
                   File Attachments
